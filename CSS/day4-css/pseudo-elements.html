@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        background-color: green;
+      }
+      p::first-letter {
+        color: #fff;
+      }
+      p::selection {
+        background-color: violet;
+        color: #fff;
+      }
+      p::before {
+        content: "Hello";
+      }
+      p::after {
+        content: "?";
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptatibus
+      saepe repellendus quisquam nisi culpa? Enim rerum veniam, unde temporibus
+      neque id repudiandae quo at qui nihil quaerat, itaque accusantium.
+    </p>
+  </body>
+</html>
