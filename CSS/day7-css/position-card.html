@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 30px;
+      }
+      .container img {
+        width: inherit;
+        height: inherit;
+      }
+      .container .detail {
+        background-color: rgba(20, 200, 30, 0.6);
+        position: absolute;
+        bottom: 0;
+        width: inherit;
+        padding: 20px 0px;
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.pexels.com/photos/11495862/pexels-photo-11495862.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        alt=""
+      />
+      <div class="detail">
+        <h2>Heading 2</h2>
+        <p>This is p</p>
+      </div>
+    </div>
+  </body>
+</html>
