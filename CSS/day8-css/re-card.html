@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      :root {
+        --main-color: rgb(186, 13, 140);
+      }
+      body {
+        height: 100vh;
+        background: linear-gradient(to top, var(--main-color), #fff);
+      }
+      .container {
+        width: 350px;
+        height: fit-content;
+        background-color: #fff;
+        margin: 200px auto;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .container .number-box {
+        height: 200px;
+        position: relative;
+      }
+      .container .number-box .number {
+        width: 120%;
+        height: 200px;
+        background-color: var(--main-color);
+        position: absolute;
+        left: -37px;
+        border-radius: 100% 0% 47% 53% / 0% 0% 100% 100%;
+      }
+      .container .number-box .number span {
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .container p {
+        padding: 20px 30px;
+        text-align: center;
+      }
+      .container button {
+        display: block;
+        margin: 0px auto 40px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 0;
+        background-color: var(--main-color);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="number-box">
+        <div class="number">
+          <span>1</span>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+        inventore hic aperiam eligendi nobis voluptates porro quisquam quis
+        tempore est
+      </p>
+      <button>Read More</button>
+    </div>
+  </body>
+</html>
