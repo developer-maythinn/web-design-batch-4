@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: hotpink;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* overflow: hidden; */
+      }
+      p {
+        display: none;
+      }
+      div:hover p {
+        width: inherit;
+        height: auto;
+        padding: 20px;
+        border-radius: 50%;
+        text-align: center;
+        display: inline;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      div:hover p::before {
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Hello</p>
+    </div>
+  </body>
+</html>

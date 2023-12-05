@@ -1,0 +1,33 @@
+@import "./variables";
+@import "./buttonStyles";
+@import "./flexCenter";
+
+body {
+  background-color: $primaryColor;
+}
+.container {
+  .card {
+    h1 {
+      color: $whiteColor;
+    }
+    p {
+      color: $whiteColor;
+      // @extend .buttonStyles;
+    }
+    button {
+      @extend .buttonStyles;
+    }
+  }
+}
+button {
+  @extend .buttonStyles;
+}
+.container1 {
+  @include flexCenter(aquamarine, 50vh);
+}
+.container2 {
+  @include flexCenter(yellow, 100vh);
+}
+.container3 {
+  @include flexCenter(green, 70vh);
+}
