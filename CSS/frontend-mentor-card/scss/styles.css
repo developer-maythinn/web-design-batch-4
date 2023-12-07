@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Hanken Grotesk;
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+  font-weight: 500;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.container {
+  width: 650px;
+  height: auto;
+  box-shadow: 5px 5px 20px #7857ff;
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+}
+
+.container .left-side {
+  width: 50%;
+  background-image: linear-gradient(#7857ff, #2e2be9);
+  padding: 35px 40px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .left-side .result-title {
+  font-size: 20px;
+  color: #c8c7ff;
+}
+
+.container .left-side .circle {
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(#4e21ca, rgba(36, 33, 202, 0));
+}
+
+.container .left-side .circle .number {
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+.container .left-side .circle p:last-child {
+  color: #c8c7ff;
+  font-size: 16px;
+}
+
+.container .left-side h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  margin-top: 30px;
+}
+
+.container .left-side .description {
+  color: #c8c7ff;
+  padding-top: 14px;
+}
+
+.container .right-side {
+  width: 50%;
+  text-align: left;
+  padding: 35px;
+}
+
+.container .right-side h4 {
+  font-size: 20px;
+  color: #303b5a;
+}
+
+.container .right-side ul {
+  list-style: none;
+  padding: 8px 0px 20px;
+}
+
+.container .right-side ul li {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0;
+  border-radius: 8px;
+}
+
+.container .right-side ul li .list-item-title {
+  display: flex;
+}
+
+.container .right-side ul li .list-item-title img {
+  margin-right: 8px;
+}
+
+.container .right-side ul li span {
+  color: gray;
+}
+
+.container .right-side ul li span b {
+  color: #303b5a;
+}
+
+.container .right-side ul .reaction {
+  background-color: rgba(255, 87, 87, 0.09);
+}
+
+.container .right-side ul .reaction .list-item-title {
+  color: #ff5757;
+}
+
+.container .right-side ul .memory {
+  background-color: rgba(255, 176, 31, 0.09);
+}
+
+.container .right-side ul .memory .list-item-title {
+  color: #ffb01f;
+}
+
+.container .right-side ul .verbal {
+  background-color: rgba(0, 189, 145, 0.09);
+}
+
+.container .right-side ul .verbal .list-item-title {
+  color: #00bd91;
+}
+
+.container .right-side ul .visual {
+  background-color: rgba(17, 37, 212, 0.09);
+}
+
+.container .right-side ul .visual .list-item-title {
+  color: #1125d4;
+}
+
+.container .right-side button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #303b5a;
+  color: white;
+  font-size: 16px;
+}
+/*# sourceMappingURL=styles.css.map */
