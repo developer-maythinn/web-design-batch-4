@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    background-color: rgba(224, 99, 77, 0.6);
+    position: absolute;
+    width: 100%;
+    .logo {
+    }
+    .nav-container {
+      display: flex;
+      li {
+        a {
+        }
+      }
+      .dropdown-container {
+        .dropdown {
+          display: none;
+          li {
+          }
+        }
+      }
+    }
+  }
+  .banner-image {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+  .content {
+    max-width: 600px;
+    position: absolute;
+    inset: 0;
+    height: 0;
+    margin: auto;
+    bottom: 100px;
+  }
+}
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

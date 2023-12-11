@@ -102,6 +102,7 @@ body {
   justify-content: space-between;
   margin: 14px 0;
   border-radius: 8px;
+  background: #ffffff;
 }
 
 .container .right-side ul li .list-item-title {
@@ -160,5 +161,36 @@ body {
   background-color: #303b5a;
   color: white;
   font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    border-radius: initial;
+  }
+  .container .left-side,
+  .container .right-side {
+    width: 100%;
+  }
+  .container .left-side {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 75vh;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    border-radius: 25px;
+  }
+  .container .left-side,
+  .container .right-side {
+    width: 100%;
+  }
+  .container .left-side {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
