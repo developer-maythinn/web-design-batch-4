@@ -22,6 +22,9 @@ a {
     background-color: transparent;
     position: absolute;
     width: 100%;
+    // @media (max-width: 768px) {
+    //   background-color: red;
+    // }
     .logo {
       color: #fff;
       font-size: 26px;
@@ -74,14 +77,16 @@ a {
     text-align: center;
 
     h1 {
-      font-size: 40px;
+      // font-size: 40px;
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+
       font-weight: 500;
       span {
         color: #ffff05;
       }
     }
     p {
-      font-size: 20px;
+      font-size: clamp(16px, 3vw, 1.3rem);
     }
     .buttonStyles {
       border: 1px solid #fafafa;
@@ -110,6 +115,31 @@ a {
   left: 0;
 }
 
+@media (max-width: 768px) {
+  .banner {
+    header {
+      flex-wrap: wrap;
+      padding: 14px 16px;
+      .logo {
+        margin: 0 auto;
+      }
+      .nav-container {
+        li {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+// @media (min-width: 768px) and (max-width: 992px) {
+//   .banner {
+//     .content {
+//       h1 {
+//         font-size: 32px;
+//       }
+//     }
+//   }
+// }
 .about {
   display: flex;
   padding: 50px;
@@ -141,7 +171,20 @@ a {
     }
   }
 }
-
+@media (max-width: 992px) {
+  .about {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    .about-img {
+      width: 100%;
+    }
+    .about-container {
+      i {
+        visibility: hidden;
+      }
+    }
+  }
+}
 .team {
   h2 {
     text-align: center;
@@ -183,7 +226,21 @@ a {
     }
   }
 }
-
+@media (max-width: 992px) {
+  .team-container {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .team {
+    .team-container {
+      .card {
+        width: 60%;
+        margin: 20px auto;
+      }
+    }
+  }
+}
 .contact {
   background-color: #1e1e1e;
   width: 100%;
@@ -217,6 +274,44 @@ a {
       input[type="button"] {
         align-self: flex-start;
       }
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  background-color: #2a2626;
+  color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  p {
+  }
+  .social {
+    a {
+      margin: 0px 10px;
+      padding: 10px;
+      width: 35px;
+      height: 35px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fafafa;
+      font-size: 20px;
+    }
+    a:nth-child(1) {
+      background-color: #3c5997;
+    }
+    a:nth-child(2) {
+      background-color: #1ea1f0;
+    }
+    a:nth-child(3) {
+      background-color: #774f99;
+    }
+    a:nth-child(4) {
+      background-color: #2578af;
     }
   }
 }

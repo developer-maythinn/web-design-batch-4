@@ -86,7 +86,7 @@ a {
 }
 
 .banner .content h1 {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   font-weight: 500;
 }
 
@@ -95,7 +95,7 @@ a {
 }
 
 .banner .content p {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 1.3rem);
 }
 
 .banner .content .buttonStyles {
@@ -123,6 +123,19 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .banner header {
+    flex-wrap: wrap;
+    padding: 14px 16px;
+  }
+  .banner header .logo {
+    margin: 0 auto;
+  }
+  .banner header .nav-container li {
+    padding: 10px;
+  }
 }
 
 .about {
@@ -158,6 +171,19 @@ a {
 .about .about-container .about-content p {
   text-indent: 50px;
   line-height: 30px;
+}
+
+@media (max-width: 992px) {
+  .about {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+  }
+  .about .about-img {
+    width: 100%;
+  }
+  .about .about-container i {
+    visibility: hidden;
+  }
 }
 
 .team h2 {
@@ -201,6 +227,19 @@ a {
   font-size: 16px;
 }
 
+@media (max-width: 992px) {
+  .team-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .team .team-container .card {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+
 .contact {
   background-color: #1e1e1e;
   width: 100%;
@@ -239,5 +278,44 @@ a {
 
 .contact .contact-form form input[type="button"] {
   align-self: flex-start;
+}
+
+footer {
+  height: 100px;
+  background-color: #2a2626;
+  color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+footer .social a {
+  margin: 0px 10px;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+footer .social a:nth-child(1) {
+  background-color: #3c5997;
+}
+
+footer .social a:nth-child(2) {
+  background-color: #1ea1f0;
+}
+
+footer .social a:nth-child(3) {
+  background-color: #774f99;
+}
+
+footer .social a:nth-child(4) {
+  background-color: #2578af;
 }
 /*# sourceMappingURL=styles.css.map */
