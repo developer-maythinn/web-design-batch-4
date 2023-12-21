@@ -1,0 +1,75 @@
+Javascript
+
+REF: https://javascript.info/variables, 
+w3school, 
+https://www.tutorialspoint.com/javascript/index.htm
+https://developer.mozilla.org/
+
+Javascript is the most popular scripting language or programming language
+JavaScript Can Change HTML Content
+JavaScript files have the file extension .js
+
+
+********************************************
+JavaScript Where To
+In HTML, JavaScript code is inserted between <script> and </script> tags.
+  <script language = "javascript" type = "text/javascript">   
+           document.write("Hello World!")
+console.log('Hello")
+
+External JavaScript
+<script src="myScript.js"></script>
+External scripts cannot contain <script> tags.
+
+You can place an external script reference in <head> or <body> as you like.
+https://developers.google.com/web/updates/2016/08/removing-document-write
+
+***************************************************
+Why use External JavaScript
+As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+
+The benefit of a separate file is that the browser will download it and store it in its cache.
+
+Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+
+That reduces traffic and makes pages faster.
+
+***************************************************
+JavaScript Can Change HTML Content
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Hello World";
+</script> 
+
+***************************************************
+Comments
+One-line comments start with two forward slash characters //
+Multiline comments /* */
+
+***************************************************
+Variables
+var is an old-school variable declaration
+let is a modern variable declaration.
+const is like let, but the value of the variable can’t be changed.
+
+the variable declaration and assignment into a single line:
+let message = 'Hello!';
+
+Declare multiple variables in one line:
+let user = 'John', age = 25, message = 'Hello';
+
+We can also change it as many times as we want
+let message;
+message = 'Hello!';
+message = 'World!'; // value changed
+alert(message);
+
+We can also declare two variables and copy data from one into the other
+let hello = 'Hello world!';
+let message;
+// copy 'Hello world' from hello into message
+message = hello;
+
+// now two variables hold the same data
+alert(hello); // Hello world!
+alert(message); // Hello world!
