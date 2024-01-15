@@ -102,12 +102,3 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 this
 call() https://www.w3schools.com/js/js_function_call.asp
 
-*******************************************************************
-Primitives data type
-strings,
-numbers,
-boolean values true/false,
-null,
-undefined, 
-symbol,
-bigint

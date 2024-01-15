@@ -35,11 +35,44 @@
       //     console.log("Hello myFunc");
       //   }
 
-      function user(name, age) {
-        console.log(name, age);
-      }
-      user("John", 30);
-      user("Su", 20);
+      //   function user(name, age) {
+      //     console.log(name, age);
+      //   }
+      //   user("John", 30);
+      //   user("Su", 20);
+
+      //   function fruit() {
+      //     return this;
+      //   }
+      //   console.log(fruit());
+
+      //   let user = {
+      //     age: 25,
+      //     name: "John",
+      //     myFunc: function fruit() {
+      //       return this;
+      //     },
+      //   };
+      //   console.log(user.myFunc());
+      //   console.log(user.myFunc().name);
+      //   console.log(user.myFunc().age);
+
+      let fruit = {
+        myFruit: function () {
+          return this;
+        },
+      };
+
+      let fruit1 = {
+        name: "apple",
+        price: "$20",
+      };
+      let fruit2 = {
+        name: "orange",
+        price: "$20",
+      };
+      console.log(fruit.myFruit.call(fruit1));
+      console.log(fruit.myFruit.call(fruit2));
     </script>
   </body>
 </html>
