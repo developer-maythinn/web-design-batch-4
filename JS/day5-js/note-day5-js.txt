@@ -23,13 +23,14 @@ continue labelname;
 Example:
 var cars = ["BMW", "Volvo", "Saab", "Ford"];
 var text = "";
-list: {
+list1: {
   text += cars[0] + "<br>"; 
   text += cars[1] + "<br>"; 
   break list;
   text += cars[2] + "<br>"; 
   text += cars[3] + "<br>"; 
 }
+
 document.getElementById("demo").innerHTML = text;
 
 *******************************************************************
