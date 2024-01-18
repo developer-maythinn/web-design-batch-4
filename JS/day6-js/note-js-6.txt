@@ -127,6 +127,7 @@ let car = cars[0];
 
 const cars = ["Saab", "Volvo", "BMW"];
 cars[0] = "Opel";
+
 Array Elements Can Be Objects
 myArray[0] = Date.now;
 myArray[1] = myFunction;
@@ -154,7 +155,7 @@ Array Method
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 https://www.w3schools.com/js/js_array_methods.asp
 
-arr.length => length of arrray
+arr.length => length of array
 toString()  => Converting Arrays to Strings
 All JavaScript objects have a toString() method.
 arr.push(...items) – adds items to the end,
