@@ -1,24 +1,4 @@
 
-Changing the Value of an Attribute
-document.getElementById(id).attribute = new value
-
-<img id="myImage" src="smiley.gif">
-<script>
-document.getElementById("myImage").src = "landscape.jpg";
-</script>
-
-Changing HTML Style
-document.getElementById(id).style.property = new style
-document.getElementById("p2").style.color = "blue";
-
-Creating New HTML Elements (Nodes)
-https://www.w3schools.com/js/js_htmldom_nodes.asp
-https://www.w3schools.com/js/js_htmldom_document.asp
-<div id="div1">
-  <p id="p1">This is a paragraph.</p>
-  <p id="p2">This is another paragraph.</p>
-</div>
-
 
 *************************************
 html object collections
@@ -62,6 +42,14 @@ parent.removeChild(child);
 </script>
 replaceChild() => replace an element to the HTML DOM
 
+
+An HTMLCollection is NOT an array!
+
+An HTMLCollection may look like an array, but it is not.
+
+You can loop through the list and refer to the elements with a number (just like an array).
+
+However, you cannot use array methods like valueOf(), pop(), push(), or join() on an HTMLCollection
 
 Dom Events
 https://www.w3schools.com/js/js_htmldom_events.asp
