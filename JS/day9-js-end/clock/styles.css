@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fafafa;
+}
+
+.container {
+  text-align: center;
+}
+
+.container #clock {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 3rem;
+}
+
+.container #date {
+  font-family: "Poppins", sans-serif;
+}
+
+.container button {
+  padding: 5px 20px;
+  margin-top: 12px;
+}
+/*# sourceMappingURL=styles.css.map */
