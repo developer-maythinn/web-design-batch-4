@@ -2,25 +2,54 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .main-section-bg {
   overflow: hidden;
-  background-image: linear-gradient(to left, rgb(36, 59, 85), rgb(20, 30, 48));
+  background-image: linear-gradient(to left, #243b55, #141e30);
 }
+
 .main-section-bg .cover-container .main-section-row {
   height: 93vh;
 }
+
 .main-section-bg .cover-container .main-section-row .bg-img {
-  border-radius: 65% 35% 27% 73%/46% 53% 47% 54%;
+  border-radius: 65% 35% 27% 73% / 46% 53% 47% 54%;
   background-image: linear-gradient(to right, #4ac29a, #bdfff3);
   width: 90%;
   height: 300px;
   margin: auto;
 }
+
 .main-section-bg .cover-container .main-section-row .bg-img .custom-icon-styles {
   font-size: 25vw;
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .main-section-bg .cover-container .main-section-row .bg-img {
     height: 30rem;
@@ -29,6 +58,7 @@
     font-size: 10vw;
   }
 }
+
 @media (min-width: 992px) {
   .main-section-bg .cover-container .main-section-row .bg-img {
     width: 70%;
@@ -59,4 +89,38 @@
 
 .custom-shape-divider-bottom-1707750769 .shape-fill {
   fill: #ffffff;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.about {
+  height: 80vh;
+}
+
+.about img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  transform: skewY(7deg);
+  border: 10px solid #52c6a0;
+  border-radius: 10px;
+  box-shadow: -10px 10px, -15px 10px 20px;
+  margin-top: 3rem;
+}
+
+.card-container {
+  height: 70vh;
+  background-image: url(/bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-container .icon-box {
+  border-radius: 15px;
+  backdrop-filter: blur(1rem);
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  padding: 30px;
+}
+
+.card-container .icon-box i {
+  font-size: 3em;
+}
+/*# sourceMappingURL=styles.css.map */

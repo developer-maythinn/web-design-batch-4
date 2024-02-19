@@ -2,6 +2,31 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .main-section-bg {
   overflow: hidden;
@@ -60,4 +85,38 @@
 
 .custom-shape-divider-bottom-1707750769 .shape-fill {
   fill: #ffffff;
+}
+
+.about {
+  height: 80vh;
+  img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    transform: skewY(7deg);
+    border: 10px solid #52c6a0;
+    border-radius: 10px;
+    box-shadow: -10px 10px, -15px 10px 20px;
+    margin-top: 3rem;
+  }
+}
+
+.card-container {
+  height: 70vh;
+  background-image: url(/bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  .icon-box {
+    border-radius: 15px;
+    backdrop-filter: blur(1rem);
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    padding: 30px;
+    i {
+      font-size: 3em;
+    }
+  }
 }
