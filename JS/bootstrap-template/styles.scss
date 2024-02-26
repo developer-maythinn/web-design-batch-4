@@ -161,3 +161,34 @@ footer {
     color: #fafafa;
   }
 }
+
+.owl-carousel {
+  .owl-item {
+    .custom-carousel-item {
+      height: 350px;
+      display: flex;
+      align-items: flex-end;
+      background-image: linear-gradient(54deg, #fed350 30%, #a2f1de 60%);
+      .wrapper {
+        position: relative;
+        img {
+          width: 80px;
+          height: 80px;
+          border: 2px solid pink;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: -22%;
+        }
+
+        p {
+          background-color: #fff;
+          padding: 40px 20px 20px;
+          border-radius: 20% 20% 0px 0px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

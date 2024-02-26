@@ -172,4 +172,33 @@ footer {
 footer p {
   color: #fafafa;
 }
+
+.owl-carousel .owl-item .custom-carousel-item {
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  background-image: linear-gradient(54deg, #fed350 30%, #a2f1de 60%);
+}
+
+.owl-carousel .owl-item .custom-carousel-item .wrapper {
+  position: relative;
+}
+
+.owl-carousel .owl-item .custom-carousel-item .wrapper img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid pink;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -22%;
+}
+
+.owl-carousel .owl-item .custom-carousel-item .wrapper p {
+  background-color: #fff;
+  padding: 40px 20px 20px;
+  border-radius: 20% 20% 0px 0px;
+  margin: 0;
+}
 /*# sourceMappingURL=styles.css.map */
